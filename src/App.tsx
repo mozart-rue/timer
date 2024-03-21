@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 import { useState } from 'react'
 import { defaultTheme } from './styles/themes/default'
+import { GlobalStyle } from './styles/global'
 
 export function App() {
   const [count, setCount] = useState(0)
@@ -8,6 +9,8 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <h1>Hello Ignite</h1>
+
+      <GlobalStyle />
     </ThemeProvider>
   )
 }
